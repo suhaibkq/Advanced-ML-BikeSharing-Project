@@ -40,4 +40,35 @@ The dataset includes rental data over two years with variables like weather cond
 | `workingday`  | 1 if working day, 0 otherwise                                               |
 | `weathersit`  | Weather condition (1–4 categories)                                          |
 | `temp`        | Normalized temperature                                                      |
-| `atemp`       | Normalized “feels like” temperature
+| `atemp`       | Normalized “feels like” temperature                                         |
+| `hum`         | Normalized humidity                                                         |
+| `windspeed`   | Normalized wind speed                                                       |
+| `casual`      | Count of casual users                                                       |
+| `registered`  | Count of registered users                                                   |
+| `cnt`         | Total rental count (target variable)                                        |
+
+---
+
+## 🛠️ Techniques Used
+
+- **Exploratory Data Analysis (EDA)** using Pandas and Seaborn
+- **Feature Engineering** for categorical variables
+- **Modeling Approaches**:
+  - Decision Trees
+  - Random Forest (Bagging)
+  - XGBoost (Boosting)
+  - Stacking Classifier (Ensemble)
+- **Model Evaluation** using RMSE, R², and cross-validation
+
+---
+
+## 📈 Results
+
+- Identified key predictors for bike demand (hour, temperature, season, etc.)
+- Built ensemble models that significantly improved prediction accuracy over baseline models
+- Provided business recommendations for resource planning during peak demand
+
+---
+
+## 📂 Project Structure
+
